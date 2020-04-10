@@ -27,10 +27,12 @@ Base technique pour utiliser les axes X, Y, Z de l’orientation d’un téléph
 
 ### [sk-web-360-image](sk-web-360-image)
 Exemple de visiosphère à 360° avec une image.
+
 *👉Un serveur local est nécessaire pour lancer le script ([sur Windows avec WAMP](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#r-4443661) ou [sur Mac avec MAMP](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#/id/r-4443692)).*
 
 ### [sk-web-360-video](sk-web-360-video)
 Exemple de visiosphère à 360° avec une vidéo.
+
 *👉Un serveur local est nécessaire pour lancer le script ([sur Windows avec WAMP](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#r-4443661) ou [sur Mac avec MAMP](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#/id/r-4443692)).*
 
 ### [sk-web-3D](sk-web-3D)
