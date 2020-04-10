@@ -10,20 +10,29 @@
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<script>
 		$(function(){
 			function handleOrientation(event) {
-				// Pour comprendre les variables :
+				// Pour comprendre ces variables :
 				// https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained
-			  var x = event.beta;  // In degree in the range [-180,180]
-			  var y = event.gamma; // In degree in the range [-90,90]
-			  var z = event.alpha; // In degree in the range [-90,90]
 
-				var absolute = event.absolute;
+        // AXE X :
+        // Téléphone posé sur une table ou debout
+			  var x = parseInt(event.beta);  // Entre [-180,180]
 
-				$('#header').text(x, y, z, absolute);
+        // AXE Y
+        // Téléphone qui penche à gauche ou à droite (en mode portrait)
+			  var y = parseInt(event.gamma); // Entre [-90,90]
+
+        // AXE Z
+        // Rotation du téléphone en portrait, paysage et tous les angles intermédiaires
+			  var z = parseInt(event.alpha); // Entre [-180,180]
+
+				$('#value-x').text(x);
+				$('#value-y').text(y);
+				$('#value-z').text(z);
 			}
 
 			window.addEventListener('deviceorientation', handleOrientation);
@@ -33,11 +42,26 @@
 <body>
 
 	<header id="header">
-		<h1>sk-web-browser-resize</h1>
-		<p>Redimensionnez la fenêtre du navigateur pour changer le contenu de la page.</p>
-	</header>
+		<h1>sk-web-device-orientation</h1>
+		<p>Faites bouger votre téléphone dans votre main pour voir l'évolution des valeurs X, Y, Z.</p>
+    <p>
+      <strong>Axe X</strong> : <span id="value-x"></span><br>
+      <i>Posez votre téléphone sur une table, et levez-le par le haut de l'écran, en gardant le bas du téléphone en contact avec la table.</i>
+    </p>
 
-	<div id="item"></div>
+    <p>
+      <strong>Axe Y</strong> : <span id="value-y"></span><br>
+      <i>Posez votre téléphone sur une table, et inclinez-le sur la gauche ou sur la droite (tilt)</i>
+    </p>
+
+    <p>
+      <strong>Axe Z</strong> : <span id="value-z"></span><br>
+      <i>Posez votre téléphone sur une table, et faites-le tourner sur lui-même à plat.</i>
+    </p>
+
+    		<p><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained">D'autres explications et schémas pour mieux comprendre les axes</a></p>
+
+	</header>
 
 </body>
 </html>
