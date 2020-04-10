@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+<head>
+	<title>sk-web-parallax</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/rellax.min.js"></script>
+
+	<script>
+		$(function(){
+			var parallax = new Rellax('.parallax');
+		});
+	</script>
+</head>
+<body>
+
+	<header id="header">
+		<h1>sk-web-parallax</h1>
+		<p>Scrollez vers le bas pour créer un effet parallax.</p>
+	</header>
+
+	<div class="item parallax">
+		Cet élément va monter lentement.
+	</div>
+
+	<div class="item parallax" data-rellax-speed="7">
+		Cet élément va monter plus vite.
+	</div>
+
+	<div class="item">
+		Cet élément n'a pas de parallax, et suivra la vitesse du scroll.
+	</div>
+
+	<div class="item parallax" data-rellax-speed="-4">
+		Cet élément va monter trèèès lentement.
+	</div>
+
+</body>
+</html>

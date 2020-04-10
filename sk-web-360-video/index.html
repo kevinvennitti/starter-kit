@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sk-web-360-video</title>
+
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <script src="js/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene vr-mode-ui="enabled: false" loading-screen="enabled: false">
+      <a-assets>
+        <video id="video" autoplay loop playsinline webkit-playsinline crossorigin="anonymous" preload="auto" src="videos/video360.mp4"></video>
+      </a-assets>
+      <a-entity camera look-controls="reverseMouseDrag: true"></a-entity>
+      <a-videosphere src="#video"></a-videosphere>
+    </a-scene>
+  </body>
+</html>

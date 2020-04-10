@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+<head>
+	<title>sk-web-browser-resize</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	<script>
+		$(function(){
+			$(window).resize(function(){
+				onResize();
+			});
+
+			onResize();
+
+			function onResize() {
+
+				let width = $(window).width();
+				let height = $(window).height();
+
+				if (width < 1000) {
+					$('body').addClass('class1');
+				} else {
+					$('body').removeClass('class1');
+				}
+
+				if (width < 800 && height < 500) {
+					$('#item').addClass('class2');
+				} else {
+					$('#item').removeClass('class2');
+				}
+
+			}
+		});
+	</script>
+</head>
+<body>
+
+	<header id="header">
+		<h1>sk-web-browser-resize</h1>
+		<p>Redimensionnez la fenêtre du navigateur pour changer le contenu de la page.</p>
+	</header>
+
+	<div id="item"></div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+<head>
+	<title>sk-web-pin-to-scroll</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+
+	<script type="text/javascript">
+		var controller = new ScrollMagic.Controller();
+	</script>
+</head>
+<body>
+
+	<header id="header">
+		<h1>sk-web-pin-to-scroll</h1>
+		<p>Scrollez vers le bas pour ancrer puis relâcher le bloc.</p>
+		<h3>Comment ça marche ?</h3>
+		<p>
+			Le bloc vert est le bloc <code>#item1</code>.<br>
+			En scrollant, le bloc va remonter normalement. Lorsque le haut du bloc atteint le milieu de la hauteur de la fenêtre, le bloc reste ancré sur une distance de scroll de 300 pixels. Puis lorsque la distance est atteinte, le bloc continue de remonter normalement.
+		</p>
+		<h3>Comment s'approprier ce code ?</h3>
+		<p>
+			<ul>
+				<li>Changer la distance de scroll sur laquelle le bloc reste ancré</li>
+				<li>En CSS, supprimer la hauteur imposée de <code>body</code></li>
+				<li>Ajouter/supprimer un bloc pour animer d'autres éléments</li>
+			</ul>
+		</p>
+	</header>
+
+
+
+	<div class="item" id="item1">
+		Cet élément va s'ancrer à partir du milieu de la page, pendant 300 pixels.
+	</div>
+
+	<script>
+		$(function() {
+			var scene = new ScrollMagic.Scene({
+				triggerHook: 0.5, // La position du trigger, entre 0 (tout en haut) et 1 (tout en bas), 0.5 est au milieu
+				triggerElement: "#item1", // Le sélecteur de votre élément
+				duration: 300 // La distance sur laquelle l'élément reste ancré
+			})
+			.setPin("#item1") // Le sélecteur de votre élément
+			.addTo(controller);
+		});
+	</script>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<div class="item" id="item2">
+		Cet élément va s'ancrer à partir de 1/4 de page, pendant 1000 pixels.
+	</div>
+
+	<script>
+		$(function() {
+			var scene = new ScrollMagic.Scene({
+				triggerHook: 0.25, // Ici, le trigger est à un quart de la hauteur de la page
+				triggerElement: "#item2", // On sélectionne l'élément concerné
+				duration: 1000 // Ici, la distance est de 1000 pixels
+			})
+			.setPin("#item2") // On sélectionne l'élément concerné
+			.addTo(controller);
+		});
+	</script>
+
+
+
+
+</body>
+</html>

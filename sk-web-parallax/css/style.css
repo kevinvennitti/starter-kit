@@ -1,0 +1,23 @@
+.item {
+  background:#00ffba;
+  padding:30px;
+  margin:0 30px 30px;
+  text-align:center;
+}
+
+/*
+  = = = = = = = = = =
+  Vous pouvez supprimer la suite du code
+*/
+
+body {
+  height:3000px;
+}
+
+#header {
+  height:25vh;
+  padding: 10px 30px 30px 30px;
+  margin: 30px;
+  border: solid 8px black;
+  box-shadow: 16px 16px 0 #ff0087;
+}

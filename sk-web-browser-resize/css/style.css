@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+
+/*
+  = = = = = = = = = =
+  Vous pouvez supprimer la suite du code
+*/
+
+body.class1 {
+  background: #ccc;
+}
+
+#item {
+  width:800px;
+  height:500px;
+  position:absolute;
+  top:0;
+  left:0;
+  background:#00ffba;
+  z-index:-1;
+}
+
+#item.class2 {
+  background:#221111;
+}
+
+#header {
+  margin:30px;
+  padding: 10px 30px 30px 30px;
+  border: solid 8px black;
+  background:white;
+  box-shadow: 16px 16px 0 #ff0087;
+}
