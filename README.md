@@ -36,7 +36,10 @@
     </tr>
     <tr>
       <td><a href="sk-web-scroll-drag/"><pre><strong>sk-web-scroll-drag</strong></pre></a></td>
-      <td>Exemple de blocs pour scroller et/ou se déplacer en cliquer-glisser dans une grande image ou un grand contenu.</td>
+      <td>Exemple de blocs pour scroller et/ou se déplacer en cliquer-glisser dans une grande image ou un grand contenu.<br>
+      <br>
+        <blockquote><a href="https://sk-web-scroll-drag.glitch.me">Démo en ligne</a></blockquote>
+  </td>
     </tr>
     <tr>
       <td><a href="sk-web-browser-resize/"><pre><strong>sk-web-browser-resize</strong></pre></a></td>
