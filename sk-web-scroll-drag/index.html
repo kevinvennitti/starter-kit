@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>sk-web-scroll-drag</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/css.css">
+</head>
+
+
+<body>
+
+  <header id="header">
+    <h1>sk-web-scroll-drag</h1>
+    <p>Scrollez ou cliquez-déplacez une image dans une zone réduite.</p>
+  </header>
+
+  <div class="item scroll">
+    <h2>Scroll et drag - 2 axes</h2>
+    <div class="wrapper">
+      <div class="inner"><img src="images/image.jpg"></div>
+    </div>
+  </div>
+
+  <div class="item xonly">
+    <h2>Scroll et drag - Horizontal</h2>
+    <div class="wrapper">
+      <div class="inner"><img src="images/image.jpg"></div>
+    </div>
+  </div>
+  
+
+  <script type="text/javascript">
+    window.onload = function() {
+
+      /* Scroll */
+
+      var scrollElScroll = document.querySelector(".item.scroll .inner");
+      var scr = new ScrollBooster({
+        viewport: document.querySelector(".item.scroll .wrapper"),
+        emulateScroll: true,
+        // bounce: false, // Pour éviter l'effet élastique
+        onUpdate: function(data) {
+          scrollElScroll.style.transform =
+            "translate(" + -data.position.x + "px, " + -data.position.y + "px)";
+        }
+      });
+
+      /* X only */
+
+      var scrollElXOnly = document.querySelector(".xonly .inner");
+      var src = new ScrollBooster({
+        viewport: document.querySelector(".xonly .wrapper"),
+        emulateScroll: true,
+        direction: "horizontal",
+        // bounce: false, // Pour éviter l'effet élastique au drag
+        onUpdate: function(data) {
+          scrollElXOnly.style.transform =
+            "translate(" + -data.position.x + "px, " + -data.position.y + "px)";
+        }
+      });
+    }
+  </script>
+
+
+  <script src="js/scrollbooster.min.js"></script>
+</body>
+</html>

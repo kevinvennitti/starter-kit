@@ -1,0 +1,26 @@
+.item {
+  display:inline-block;
+  margin:30px;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width:300px;
+  height: 300px;
+  margin:0 auto 20px;
+  border:solid 8px black;
+}
+
+/*
+  = = = = = = = = = =
+  Vous pouvez supprimer la suite du code
+*/
+
+#header {
+  margin:30px;
+  padding: 10px 30px 30px 30px;
+  border: solid 8px black;
+  background:white;
+  box-shadow: 16px 16px 0 #ff0087;
+}

@@ -12,13 +12,13 @@
   <tbody>
     <tr>
       <td><a href="sk-web-getting-started/"><pre><strong>sk-web-getting-started</strong></pre></a></td>
-      <td>Dans ce dossier, vous trouverez toutes les balises HTML de base,  
+      <td>Dans ce dossier, vous trouverez toutes les balises HTML de base,
         les exemples de sélecteurs et de styles CSS, et la structure classique d’un projet web.</td>
     </tr>
     <tr>
       <td><a href="sk-web-example/"><pre><strong>sk-web-example</strong></pre></a></td>
-      <td>Structure prête à l’emploi pour un projet web,  
-        avec un fichier HTML, CSS, Javascript et les librairies  
+      <td>Structure prête à l’emploi pour un projet web,
+        avec un fichier HTML, CSS, Javascript et les librairies
         jQuery + jQuery UI (pour manipuler les éléments en Javascript).</td>
     </tr>
     <tr>
@@ -33,6 +33,10 @@
     <tr>
       <td><a href="sk-web-slides/"><pre><strong>sk-web-slides</strong></pre></a></td>
       <td>Exemple de page en présentation par slides horizontaux.</td>
+    </tr>
+    <tr>
+      <td><a href="sk-web-scroll-drag/"><pre><strong>sk-web-scroll-drag</strong></pre></a></td>
+      <td>Exemple de blocs pour scroller et/ou se déplacer en cliquer-glisser dans une grande image ou un grand contenu.</td>
     </tr>
     <tr>
       <td><a href="sk-web-browser-resize/"><pre><strong>sk-web-browser-resize</strong></pre></a></td>
@@ -64,4 +68,3 @@
     </tr>
   </tbody>
 </table>
-
