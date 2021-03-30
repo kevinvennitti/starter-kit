@@ -3,7 +3,9 @@
 
 ###  <a href="https://starterkit.kevinvennitti.com"><strong>🕹 Explorez les démos en ligne</strong></a>
 
-<a href="sk-web-getting-started/"><strong>sk-web-getting-started</strong></a>
+
+
+#### <a href="sk-web-getting-started/"><strong>sk-web-getting-started</strong></a>
 
 Dans ce dossier, vous trouverez toutes les balises HTML de base, les exemples de sélecteurs et de styles CSS, et la structure classique d’un projet web.
 
