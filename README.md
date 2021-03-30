@@ -9,9 +9,9 @@
 
 Dans ce dossier, vous trouverez toutes les balises HTML de base, les exemples de sélecteurs et de styles CSS, et la structure classique d’un projet web.
 
------
 
-<a href="sk-web-example/"><strong>sk-web-example</strong></a>
+
+#### <a href="sk-web-example/"><strong>sk-web-example</strong></a>
 
 Structure prête à l’emploi pour un projet web, avec un fichier HTML, CSS, Javascript et les librairies jQuery + jQuery UI (pour manipuler les éléments en Javascript).
 
