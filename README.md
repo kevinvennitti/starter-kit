@@ -1,7 +1,8 @@
 
 # Starter kits ⚡️
 
-###  #### <a href="https://starterkit.kevinvennitti.com"><strong>🕹 Explorez les démos en ligne</strong></a>
+
+### <a href="https://starterkit.kevinvennitti.com"><strong>🕹 Explorez les démos en ligne</strong></a>
 
 
 
@@ -57,14 +58,14 @@ Base technique pour utiliser les axes X, Y, Z de l’orientation d’un téléph
 #### <a href="sk-web-360-image/"><strong>sk-web-360-image</strong></a>
 
 Exemple de visiosphère à 360° avec une image.
-Un serveur local est nécessaire pour lancer le script (#### <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#r-4443661">sur Windows avec WAMP</a> ou #### <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#/id/r-4443692">sur Mac avec MAMP</a>).
+Un serveur local est nécessaire pour lancer le script (<a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#r-4443661">sur Windows avec WAMP</a> ou <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#/id/r-4443692">sur Mac avec MAMP</a>).
 
 
 
 #### <a href="sk-web-360-video/"><strong>sk-web-360-video</strong></a>
 
 Exemple de visiosphère à 360° avec une vidéo.
-Un serveur local est nécessaire pour lancer le script (#### <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#r-4443661">sur Windows avec WAMP</a> ou #### <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#/id/r-4443692">sur Mac avec MAMP</a>).
+Un serveur local est nécessaire pour lancer le script (<a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#r-4443661">sur Windows avec WAMP</a> ou <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail#/id/r-4443692">sur Mac avec MAMP</a>).
 
 
 
